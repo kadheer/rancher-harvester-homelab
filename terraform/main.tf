@@ -1,9 +1,4 @@
 
----
-
-## 📄 terraform/main.tf
-
-```hcl
 terraform {
   required_providers {
     libvirt = {
