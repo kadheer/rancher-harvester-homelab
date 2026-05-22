@@ -3,7 +3,7 @@
 > Aufbau eines kleinen Homelabs mit **Rancher** (Cluster-Management) und **Harvester** (HCI) auf virtuellen Maschinen.  
 > Evaluation von **Longhorn-Storage** und **VM-Management** mit Terraform + KVM.
 
-## 🎯 Ziele
+## Ziele
 
 - Rancher als zentrale Kubernetes-Management-Plattform installieren
 - Harvester als HCI-Layer für VM- & Storage-Orchestrierung
@@ -11,7 +11,7 @@
 - Vollständige VM-Provisionierung mit **Terraform** (libvirt-Provider)
 - Grundlegendes VM-Lifecycle-Management über Harvester testen
 
-## 🧱 Architektur (Übersicht)
+## Architektur (Übersicht)
 
 | Komponente       | Rolle                                      | VM-Spezifikation |
 |----------------|--------------------------------------------|------------------|
@@ -22,18 +22,18 @@
 
 Alle VMs laufen unter **KVM** (libvirt) auf einem Proxmox oder einer reinen Linux-Bridge.
 
-## 🛠️ Voraussetzungen
+## Voraussetzungen
 
 - Linux-Host mit KVM (`kvm`, `libvirt`, `virt-manager`)
 - Terraform (>= 1.3)
 - kubectl, helm (für spätere Interaktion mit Rancher/Harvester)
 - ISO-Images: Ubuntu 22.04 / openSUSE Leap (Harvester empfiehlt SLES, aber für Homelab reicht Ubuntu als KVM-Gast)
 
-## 🚀 Setup
+## Setup
 
 ### 1. VMs mit Terraform erstellen
 
-```bash
+
 cd terraform
 cp terraform.tfvars.example terraform.tfvars
 # Anpassen: Netzwerk, Pfade zu ISOs, SSH-Keys
